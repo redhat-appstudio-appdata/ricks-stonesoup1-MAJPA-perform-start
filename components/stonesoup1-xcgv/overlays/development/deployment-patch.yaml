@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: stonesoup1-xcgv
+  namespace: rhn-support-rick-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ff06fa482d08431bd050febc68ad7eb65b112f11df28579a13912ffd9c699968
+        name: my-java-springboot
+        resources: {}
+status: {}
