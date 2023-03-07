@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: stonesoup1-xcgv
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:MAJPA-stonesoup1-xcgv
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ff06fa482d08431bd050febc68ad7eb65b112f11df28579a13912ffd9c699968
         name: my-java-springboot
         ports:
         - containerPort: 8081
